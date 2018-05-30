@@ -1,18 +1,18 @@
 {
   "user1" :{
-    "name" : "mahesh",
+    "name" : "erik",
     "password" : "password1",
     "profession" : "teacher",
     "id" : 1
   },
   "user2" :{
-    "name" : "suresh",
+    "name" : "derik",
     "password" : "password2",
     "profession" : "librarian",
     "id" : 2
   },
   "user3" :{
-    "name" : "ramesh",
+    "name" : "malik",
     "password" : "password3",
     "profession" : "clerk",
     "id" : 3

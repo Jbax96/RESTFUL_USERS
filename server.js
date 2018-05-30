@@ -4,7 +4,7 @@ var fs = require("fs");
 
 var user = {
     "user4" : {
-        "name" : "mohit",
+        "name" : "jerik",
         "password" : "password4",
         "profession" : "teacher",
         "id" : 4
