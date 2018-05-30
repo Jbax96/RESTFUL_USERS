@@ -30,6 +30,7 @@ app.get('/listUsers', function (req, res){
     });
 })
 
+//GET route to get user by id
 app.get('/:id', function (req,res){
     //Read current users from file
     fs.readFile(__dirname + "/" + "users.json", "utf8" , function (err,data){
@@ -37,6 +38,19 @@ app.get('/:id', function (req,res){
         var user = users["user" + req.params.id]
         console.log(user);
         res.end(JSON.stringify(user));
+    });
+})
+
+//DELETE route to delete user with id 2
+app.delete('/deleteUser', function(req,res){
+
+    //Read current users from file
+    fs.readFile(__dirname + "/" + "users.json", "utf8", function (err, data){
+        data = JSON.parse(data);
+        delete data["user" + 2];
+
+        console.log(data);
+        res.end(JSON.stringify(data));
     });
 })
 
